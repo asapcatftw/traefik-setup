@@ -11,11 +11,6 @@ defaultEntryPoints = ["https","http"]
     address = ":443"
   [entryPoints.https.tls]
 
-# REMOVE this section if you don't want the dashboard/API
-[api]
-entryPoint = "api"
-dashboard = true
-
 [retry]
 
 [docker]
