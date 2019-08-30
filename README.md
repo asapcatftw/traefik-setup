@@ -6,11 +6,24 @@ Traefik with Docker and Let's Encrypt | setup
 What will you need to get started with Traefik
 * [Docker](https://www.docker.com/) - Docker to manage/create containers 
 * [Docker-compose](https://docs.docker.com/compose/) - Docker-compose to manage multi container applications
+* Public IP
+* 1 domain or subdomain
 
-### Setup
+### Download & setup files
 Run this on your system to setup traefik
 ```
 wget https://github.com/asapcatftw/traefik-setup/blob/master/setup.sh;  sh setup.sh
+```
+### DNS | Create wildcard subdoamin
+Need for auto Let's Encrypt
+```
+A record -  *.example.com   ->  Public.IP
+CNAME    -  *.example.com   ->  example.com  
+
+--OR-- 
+
+A record -  *.subdoamin.example.com   ->  Public.IP
+CNAME    -  *.subdoamin.example.com   ->  subdoamin.example.com  
 ```
 
 ### Make Changes
