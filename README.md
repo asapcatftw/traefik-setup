@@ -76,7 +76,6 @@ volumes:
   portainer_data:
 ```
 
-### Run docker-compose
 Change `subdomain.example.com` to your domain and run compose
 ```
 cd /opt/traefik
