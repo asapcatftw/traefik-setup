@@ -14,11 +14,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /opt/traefik/traefik.toml:/traefik.toml
       - /opt/traefik/acme.json:/acme.json
-    # REMOVE this section if you don't want the dashboard/API
-    labels:
-      - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:example.com"
-      - "traefik.port=8080"
 
 networks:
   web:
