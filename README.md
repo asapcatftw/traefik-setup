@@ -18,12 +18,10 @@ wget https://github.com/asapcatftw/traefik-setup/blob/master/setup.sh;  sh setup
 Need for auto Let's Encrypt
 ```
 A record -  *.example.com   ->  Public.IP
-CNAME    -  *.example.com   ->  example.com  
 
 --OR-- 
 
 A record -  *.subdoamin.example.com   ->  Public.IP
-CNAME    -  *.subdoamin.example.com   ->  subdoamin.example.com  
 ```
 
 ### Make Changes
@@ -78,6 +76,6 @@ volumes:
 
 Change `subdomain.example.com` to your domain and run compose
 ```
-cd /opt/traefik
+cd /opt/portainer
 docker-compose up -d
 ```
