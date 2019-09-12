@@ -12,7 +12,7 @@ What will you need to get started with Traefik
 ### Download & setup files
 Run this on your system to setup traefik
 ```
-wget https://github.com/asapcatftw/traefik-setup/blob/master/setup.sh;  sh setup.sh
+wget https://raw.githubusercontent.com/asapcatftw/traefik-setup/master/setup.sh;  sh setup.sh
 ```
 ### DNS | Create wildcard subdoamin
 Need for auto Let's Encrypt
